@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthentikSharp</name>
+    </assembly>
+    <members>
+        <member name="P:AuthentikSharp.AuthentikRestException.Code">
+            <summary>
+            Http error code
+            </summary>
+        </member>
+    </members>
+</doc>

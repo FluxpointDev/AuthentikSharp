@@ -1,10 +1,9 @@
 ﻿using Newtonsoft.Json;
 
-namespace AuthentikSharp
+namespace AuthentikSharp;
+
+public class Link : Entity
 {
-    public class Link : Entity
-    {
-        [JsonProperty("link")]
-        public string LinkURL { get; set; }
-    }
+    [JsonProperty("link")]
+    public string LinkURL { get; set; }
 }

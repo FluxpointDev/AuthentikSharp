@@ -1,10 +1,9 @@
 ﻿using Newtonsoft.Json;
 
-namespace AuthentikSharp.Rest
+namespace AuthentikSharp.Rest;
+
+public class AuthentikRestError
 {
-    public class AuthentikRestError
-    {
-        [JsonProperty("detail")]
-        public string Error { get; set; }
-    }
+    [JsonProperty("detail")]
+    public string Error { get; set; }
 }

@@ -1,18 +1,17 @@
 ﻿using AuthentikSharp.Rest;
 
-namespace AuthentikSharp
+namespace AuthentikSharp;
+
+public class AuthentikClient
 {
-    public class AuthentikClient
+    public AuthentikClient(string hostUrl, string token)
     {
-        public AuthentikClient(string hostUrl, string token)
-        {
-            Rest = new AuthentikRestClient(this, hostUrl, token);
-        }
-
-        public AuthentikRestClient Rest { get; internal set; }
-
-        public bool LogRequests;
-        public bool LogResponse;
-
+        Rest = new AuthentikRestClient(this, hostUrl, token);
     }
+
+    public AuthentikRestClient Rest { get; internal set; }
+
+    public bool LogRequests;
+    public bool LogResponse;
+
 }

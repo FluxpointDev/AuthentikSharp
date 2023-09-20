@@ -1,4 +1,3 @@
-﻿namespace AuthentikSharp.Rest
-{
-    public interface IAuthentikRequest { }
-}
+﻿namespace AuthentikSharp.Rest;
+
+public interface IAuthentikRequest { }
