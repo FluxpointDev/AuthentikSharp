@@ -50,7 +50,7 @@ public static class AuthenticatorHelper
 
     public static async Task<Pagination<Authenticator>> GetUserAuthenticatorsAsync(this AuthentikClient client, long id)
     {
-        Pagination<Authenticator>? Users = await client.Rest.GetAsync<Pagination<Authenticator>>("/authenticators/all/?pk=" + id);
+        Pagination<Authenticator>? Users = await client.Rest.GetAsync<Pagination<Authenticator>>("/authenticators/admin/all/?user=" + id);
         if (Users == null)
             return new Pagination<Authenticator>();
 

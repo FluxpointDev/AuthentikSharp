@@ -74,7 +74,7 @@ public class AuthentikRestClient
 
     internal async Task<HttpResponseMessage> InternalRequest(HttpMethod method, string endpoint, object request)
     {
-        if (!endpoint.EndsWith('/'))
+        if (!endpoint.EndsWith('/') && !endpoint.Contains('?'))
             endpoint += "/";
 
         HttpRequestMessage Mes = new HttpRequestMessage(method, new Uri(APIUrl + endpoint));
@@ -117,7 +117,7 @@ public class AuthentikRestClient
     internal async Task<TResponse> InternalJsonRequest<TResponse>(HttpMethod method, string endpoint, object request, bool throwGetRequest = false)
         where TResponse : class
     {
-        if (!endpoint.EndsWith('/'))
+        if (!endpoint.EndsWith('/') && !endpoint.Contains('?'))
             endpoint += "/";
 
         HttpRequestMessage Mes = new HttpRequestMessage(method, new Uri(APIUrl + endpoint));
