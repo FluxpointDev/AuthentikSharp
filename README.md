@@ -2,6 +2,7 @@
 A client lib for Authentik to get information.
 
 ### Example
+Install the package from NuGet https://www.nuget.org/packages/AuthentikSharp
 ```cs
 AuthentikClient Auth = new AuthentikClient("https://auth.domain.com", "YourTokenHere");
 ```
