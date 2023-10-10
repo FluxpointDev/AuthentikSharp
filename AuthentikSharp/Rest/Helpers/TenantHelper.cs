@@ -15,7 +15,7 @@ public static class TenantHelper
         return Link;
     }
 
-    public static async Task<Pagination<Tenant>> GetGroupsAsync(this AuthentikClient client)
+    public static async Task<Pagination<Tenant>> GetTenantsAsync(this AuthentikClient client)
     {
         Pagination<Tenant>? Users = await client.Rest.GetAsync<Pagination<Tenant>>("/core/tenants");
         if (Users == null)
