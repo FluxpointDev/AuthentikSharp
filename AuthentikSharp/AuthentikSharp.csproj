@@ -2,23 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>AuthentikSharp</AssemblyName>
     <RootNamespace>AuthentikSharp</RootNamespace>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <DocumentationFile>AuthentikSharp.xml</DocumentationFile>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Builderb (Fluxpoint Development)</Authors>
     <Company>Fluxpoint Development</Company>
     <Product>AuthentikSharp</Product>
     <RepositoryUrl>https://github.com/FluxpointDev/AuthentikSharp</RepositoryUrl>
-    <PackageReleaseNotes>First release test version</PackageReleaseNotes>
+    <PackageReleaseNotes>Minor fixes and internal changes</PackageReleaseNotes>
     <Description>A client lib for Authentik to get information.</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HttpCoreSharp" Version="1.0.1" />
     <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="2.3.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
@@ -29,6 +30,10 @@
 
   <ItemGroup>
     <None Include="C:\Users\Brandan\Documents\Visual Studio 2022\Projects\AuthentikSharp\AuthentikSharp\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>

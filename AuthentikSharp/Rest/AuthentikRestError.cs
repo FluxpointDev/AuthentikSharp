@@ -1,9 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using HttpCoreSharp;
+using Newtonsoft.Json;
 
 namespace AuthentikSharp.Rest;
 
-public class AuthentikRestError
+public class AuthentikRestError : IHttpCoreError
 {
     [JsonProperty("detail")]
-    public string Error { get; set; }
+    public override string ErrorMessage { get; set; }
 }

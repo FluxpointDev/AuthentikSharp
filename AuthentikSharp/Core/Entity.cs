@@ -2,9 +2,8 @@
 
 namespace AuthentikSharp;
 
-public abstract class Entity
+public class Entity
 {
     [JsonIgnore]
-    internal AuthentikClient Client { get; set; }
-
+    public AuthentikClient Client { get; set; }
 }

@@ -20,7 +20,8 @@ public static class AdminHelper
         VersionInfo? Info = await client.Rest.GetAsync<VersionInfo>("/admin/version");
         if (Info == null)
             return null;
-        Info.Client = client;
+
+
 
         return Info;
     }

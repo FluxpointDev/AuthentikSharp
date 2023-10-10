@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace AuthentikSharp;
 
-public class Pagination<TResult>
+public class Pagination<TResult> : Entity
 {
     [JsonProperty("pagination")]
     public PaginationInfo Info { get; set; }
